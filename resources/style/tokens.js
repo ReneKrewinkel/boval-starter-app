@@ -1,21 +1,26 @@
 import { Dimensions } from 'react-native'
-const { width, height } = Dimensions
+const { width, height } = Dimensions.get("window")
+
+const colors = {
+    colorBlack: "#000",
+    colorWhite: "#FFF",
+    colorTransparent: "transparent",
+    colorBrandLight: "#e8effc",
+    colorBrandDark: "#1e4799",
+    colorMuted: "#D6D6D6",
+}
 
 const tokens = {
 
     screen: {
         width: width,
-        height: height
+        height: height,
+        oneQuaterHeight: (height / 4),
+        flex: 1,
+        backgroundColor: colors.colorBrandLight
     },
 
-    colors: {
-        colorBlack: "#000",
-        colorWhite: "#FFF",
-        colorTransparent: "transparent",
-        colorBrandLight: "#e8effc",
-        colorBrandDark: "#1e4799",
-        colorMuted: "#D6D6D6",
-    },
+    colors: colors,
 
     fontSize: {
         xxs: 6,

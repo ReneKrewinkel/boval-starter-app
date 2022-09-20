@@ -1,7 +1,8 @@
-import { View, Text} from "react-native"
+import React, { useState } from "react"
+import { View, Text } from "react-native"
+
 /// Card
 import Card from "../../molecules/Card"
-import CardStyle from "../../molecules/Card/Card.style"
 
 /// Content
 import Label from "../../atoms/Label"
@@ -12,8 +13,9 @@ import InputStyle from "../../atoms/Input/Input.style"
 
 import Button from "../../atoms/Button"
 import ButtonStyle from "../../atoms/Button/Button.style"
-import React, { useState } from "react";
-import { userLogin } from "../../../lib/API";
+
+import { userLogin } from "../../../lib/API"
+import LoginStyle from "./LoginStyle";
 
 const Login = ({ nav }:any) => {
 
@@ -31,7 +33,6 @@ const Login = ({ nav }:any) => {
     const loginAction = (): void => {
         userLogin(loginName, password)
             .then(result => {
-                console.warn(result)
                 nav(result)
             })
             .catch(err => {
@@ -42,18 +43,21 @@ const Login = ({ nav }:any) => {
     return(
         <Card>
 
-            <Label text="Gebruikersnaam" style={LabelStyle.default}/>
-            <Input value={""}
-                   type={"text"}
-                   style={InputStyle.default}
-                   action={setLoginName} />
+            <View style={ LoginStyle.inputGroup }>
+                <Label text="Gebruikersnaam" style={LabelStyle.default}/>
+                <Input value={""} required={true}
+                       type="text"
+                       style={InputStyle.default}
+                       action={setLoginNameHandler} />
+            </View>
 
-            <Label text={"Wachtwoord"} style={LabelStyle.default}/>
-            <Input value={""}
-                   type={"password"}
-                   style={InputStyle.default}
-                   action={setPassword} />
-
+            <View style={ LoginStyle.inputGroup }>
+                <Label text="Wachtwoord" style={LabelStyle.default}/>
+                <Input value="" required={true}
+                       type="password"
+                       style={InputStyle.default}
+                       action={setPasswordHandler} />
+            </View>
 
             <Button text="Login"
                     style={ButtonStyle.primary}

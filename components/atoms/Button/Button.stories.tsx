@@ -1,16 +1,16 @@
 import React from "react"
-import { ComponentStory, ComponentMeta } from "@storybook/react-native"
+import { Story, ComponentMeta } from "@storybook/react"
 import Button from "./Button"
 import { ButtonInterface  } from "./Button.interface"
 import ButtonStyle from "./Button.style"
 
 const ButtonMeta: ComponentMeta<typeof Button> = {
-    title: "Atoms/Button",
+    title: "BOVAL/Atoms/Button",
     component: Button,
 }
 
 
-const Template = (args: ButtonInterface) => <Button {...args} />
+const Template: Story<ButtonInterface> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
 // @ts-ignore

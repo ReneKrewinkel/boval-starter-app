@@ -1,4 +1,6 @@
+import React from 'react'
+
 export interface LabelInterface {
     text: string,
-    style: object
+    style: React.CSSProperties | any
 }

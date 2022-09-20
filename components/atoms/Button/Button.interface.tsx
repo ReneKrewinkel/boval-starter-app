@@ -1,6 +1,8 @@
+import React from 'react'
+
 export interface ButtonInterface {
     text: string
-    style: object,
-    action: any
+    style: React.CSSProperties | any,
+    action(arg?: any): any
 }
 

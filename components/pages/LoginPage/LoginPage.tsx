@@ -1,7 +1,6 @@
 import { View } from 'react-native'
-
-import tokens from "../../../resources/style/tokens"
 import Login from "../../organisms/Login"
+import LoginPageStyle from "./LoginPage.style";
 
 const LoginPage = (props: any) => {
 
@@ -10,11 +9,7 @@ const LoginPage = (props: any) => {
     }
 
     return(
-        <View style={{
-              flex: 1,
-              justifyContent: "center",
-              backgroundColor: tokens.colors.colorBrandLight
-        }}>
+        <View style={[LoginPageStyle.default, LoginPageStyle.loginScreen]}>
             <Login nav={ goHome } />
         </View>
     )

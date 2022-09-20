@@ -1,41 +1,44 @@
 import React from "react"
-import { ComponentStory, ComponentMeta } from "@storybook/react-native"
+import { Story, ComponentMeta } from "@storybook/react"
 import { View } from "react-native"
 import Card from "./Card"
 import { CardInterface  } from "./Card.interface"
 import CardStyle from "./Card.style"
 
 /// Content
+
 import Label from "../../atoms/Label"
 import LabelStyle from "../../atoms/Label/Label.style"
 
+import { Text } from "../../atoms/Input/Input.stories"
 import Input from "../../atoms/Input"
 import InputStyle from "../../atoms/Input/Input.style"
 
 import Button from "../../atoms/Button"
 import ButtonStyle from "../../atoms/Button/Button.style"
+import {
+    InputInterface
+} from "../../atoms/Input/Input.interface";
 
 const CardMeta: ComponentMeta<typeof Card> = {
-    title: "Molecules/Card",
+    title: "BOVAL/Molecules/Card",
     component: Card,
 }
 
-const LoginContent = <View>
-    <Label text={"Gebruikersnaam"} style={LabelStyle.default}/>
-    <Input value={""} type={"text"} style={InputStyle.default} action={null} />
-    <Label text={"Wachtwoord"} style={LabelStyle.default}/>
-    <Input value={""} type={"password"} style={InputStyle.default} action={null} />
-        <Button text={"Login"} style={ButtonStyle.primary} action={null}/>
-
-</View>
+const func = (e: string) => e
 
 // @ts-ignore
-const Template = (args: CardInterface) => <Card {...args} />
+const Template: Story<CardInterface> = (args) => <Card {...args} />
 
 export const Login = Template.bind({})
-// @ts-ignore
 Login.args = {
-  children: LoginContent
+  children: [
+      <Label text={"Gebruikersnaam"} style={LabelStyle.default}/>,
+      <Text value={""} required={ true } type={"text"} style={InputStyle.default} action={ func } />,
+      <Label text={"Wachtwoord"} style={LabelStyle.default}/>,
+      <Text value={""} required={ true } type={"password"} style={InputStyle.default} action={ func } />,
+      <Button text={"Login"} style={ButtonStyle.primary} action={ func }/>
+  ]
 }
 
 export default CardMeta

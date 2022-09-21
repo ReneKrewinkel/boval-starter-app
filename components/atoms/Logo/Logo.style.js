@@ -6,7 +6,7 @@ const LogoStyle = {
         alignItems: 'center',
         justifyContent: 'center',
         margin: tokens.margin.l,
-        size: tokens.logo.size.default,
+        size: tokens.logo.default.size,
     },
 
     logoDefault: {

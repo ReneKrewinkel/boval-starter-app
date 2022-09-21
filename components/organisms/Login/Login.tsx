@@ -23,7 +23,7 @@ const Login = ({ nav }:any) => {
 
     const [loginName, setLoginName] = useState("")
     const [password, setPassword] = useState("")
-    const [isError, setError] = useState(true)
+    const [isError, setError] = useState(false)
 
     const setLoginNameHandler = (eLoginname:string): void => {
         setLoginName(eLoginname)

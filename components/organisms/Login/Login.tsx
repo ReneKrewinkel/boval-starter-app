@@ -17,7 +17,7 @@ import ButtonStyle from "../../atoms/Button/Button.style"
 import { userLogin } from "../../../lib/API"
 import LoginStyle from "./LoginStyle"
 
-import Error from "../../atoms/Error"
+import Notification from "../../atoms/Notification"
 
 const Login = ({ nav }:any) => {
 
@@ -65,7 +65,8 @@ const Login = ({ nav }:any) => {
                     style={ButtonStyle.primary}
                     action={loginAction}/>
 
-            { isError && <Error code={"0001"} msg={"Error"} /> }
+            { isError && <Notification type="error"
+                                       code={"0001"} msg={"Error"} /> }
         </Card>
     )
 

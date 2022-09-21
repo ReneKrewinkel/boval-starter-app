@@ -5,8 +5,6 @@ const NotificationStyle: any = {
 
     default: {
         borderWidth: 1,
-        borderColor: tokens.colors.colorRed,
-        backgroundColor: tokens.colors.colorRedTransparent,
         padding: tokens.padding.m,
         marginLeft: tokens.margin.l,
         marginRight:tokens.margin.l,
@@ -30,6 +28,21 @@ const NotificationStyle: any = {
             size: tokens.fontSize.xxl,
             color: tokens.colors.colorRed
         }
+    },
+
+    error: {
+        borderColor: tokens.colors.colorRed,
+        backgroundColor: tokens.colors.colorRedTransparent,
+    },
+
+    warning: {
+        borderColor: tokens.colors.colorYellow,
+        backgroundColor: tokens.colors.colorYellowTransparent,
+    },
+
+    success: {
+        borderColor: tokens.colors.colorGreen,
+        backgroundColor: tokens.colors.colorGreenTransparent,
     }
 }
 

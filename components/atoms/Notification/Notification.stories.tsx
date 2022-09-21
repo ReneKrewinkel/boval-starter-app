@@ -11,12 +11,27 @@ const NotificationMeta: ComponentMeta<typeof Notification> = {
 
 const Template: Story<NotificationInterface> = (args) => <Notification {...args} />
 
-export const BaseNotification = Template.bind({})
-// @ts-ignore
-BaseNotification.args = {
+export const ErrorNotification = Template.bind({})
+ErrorNotification.args = {
+    type: "error",
     code: "001",
     msg: "Notification Message"
 }
+
+export const WarningNotification = Template.bind({})
+WarningNotification.args = {
+    type: "warning",
+    code: "001",
+    msg: "Notification Message"
+}
+
+export const SuccessNotification = Template.bind({})
+SuccessNotification.args = {
+    type: "success",
+    code: "001",
+    msg: "Notification Message"
+}
+
 
 
 

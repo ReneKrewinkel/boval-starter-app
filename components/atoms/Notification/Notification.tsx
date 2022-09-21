@@ -6,10 +6,13 @@ import NotificationStyle from "./Notification.style"
 
 /// Niet echt een atom, maar bestaat niet echt uit onderdelen.
 /// Formeel icon, en text/text ook als "atom" opnemen.
-const Notification = ({ code, msg}: NotificationInterface ) => {
+const Notification = ({ type, code, msg}: NotificationInterface ) => {
+
+    const notifyStyle = type === "error" ? NotificationStyle.error :
+                                           type === "warning" ? NotificationStyle.warning :                                                NotificationStyle.success;
 
     return(
-        <View style={NotificationStyle.default}>
+        <View style={[NotificationStyle.default, notifyStyle]}>
             {/*<MaterialIcons name="error-outline"*/}
             {/*               size={ NotificationStyle.default.icon.size }*/}
             {/*               style={NotificationStyle.default.icon } />*/}

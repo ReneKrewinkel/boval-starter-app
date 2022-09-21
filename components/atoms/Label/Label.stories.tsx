@@ -26,7 +26,7 @@ Bold.args = {
 
 export const Action = Template.bind({})
 Action.args = {
-    text: "Bold",
+    text: "Action",
     style: LabelStyle.boldCenter
 }
 

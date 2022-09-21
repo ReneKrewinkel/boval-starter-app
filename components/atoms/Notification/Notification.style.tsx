@@ -1,7 +1,7 @@
 import tokens from '../../../resources/style/tokens'
 
 
-const ErrorStyle: any = {
+const NotificationStyle: any = {
 
     default: {
         borderWidth: 1,
@@ -33,4 +33,4 @@ const ErrorStyle: any = {
     }
 }
 
-export default ErrorStyle
+export default NotificationStyle

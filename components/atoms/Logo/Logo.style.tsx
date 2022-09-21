@@ -1,6 +1,6 @@
 import tokens from '../../../resources/style/tokens'
 
-const LogoStyle = {
+const LogoStyle: any = {
 
     default: {
         alignItems: 'center',

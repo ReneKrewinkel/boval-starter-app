@@ -1,7 +1,7 @@
 import tokens from '../../../resources/style/tokens'
 
 
-const ErrorStyle = {
+const ErrorStyle: any = {
 
     default: {
         borderWidth: 1,
@@ -19,11 +19,13 @@ const ErrorStyle = {
             fontSize: tokens.fontSize.m,
             margin: tokens.margin.s,
         },
+
         bold: {
             fontSize: tokens.fontSize.m,
             fontWeight: tokens.fontWeight.bold,
             margin: tokens.margin.s,
         },
+
         icon: {
             size: tokens.fontSize.xxl,
             color: tokens.colors.colorRed

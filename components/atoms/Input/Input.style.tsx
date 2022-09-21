@@ -1,6 +1,6 @@
 import tokens from '../../../resources/style/tokens'
 
-const InputStyle = {
+const InputStyle: any = {
 
     default: {
         borderBottomWidth: 1,

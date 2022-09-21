@@ -1,6 +1,6 @@
 import tokens from '../../../resources/style/tokens'
 
-const CardStyle = {
+const CardStyle: any = {
 
     default: {
         margin: tokens.margin.l,

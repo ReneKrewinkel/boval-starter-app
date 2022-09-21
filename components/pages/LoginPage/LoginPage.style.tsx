@@ -1,6 +1,7 @@
 import tokens from '../../../resources/style/tokens'
+import {RegisteredStyle} from "react-native";
 
-const LoginPageStyle = {
+const LoginPageStyle: any = {
 
     default: {
         ...tokens.screen,
@@ -8,7 +9,7 @@ const LoginPageStyle = {
     },
 
     loginScreen: {
-        paddingTop: tokens.base.oneSeventhHeight
+        paddingTop: tokens.base.oneEighthHeight
     }
 
 }

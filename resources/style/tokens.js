@@ -8,8 +8,12 @@ const colors = {
     colorBrandLight: "#e8effc",
     colorBrandDark: "#1e4799",
     colorMuted: "#D6D6D6",
-    colorRed: "#F00",
-    colorRedTransparent: "rgba(255,0,0,0.2)"
+    colorRed: "rgb(237,110,105)",
+    colorRedTransparent: "rgba(237,110,105,0.2)",
+    colorGreen: "rgb(140,220,77)",
+    colorGreenTransparent: "rgba(140,220,77,0.2)",
+    colorYellow: "rgb(248, 207, 101)",
+    colorYellowTransparent: "rgba(248, 207, 101, 0.2)"
 }
 
 const tokens = {
@@ -21,6 +25,7 @@ const tokens = {
         oneFifthHeight: height / 5,
         oneSixthHeight: height / 6,
         oneSeventhHeight: height / 7,
+        oneEighthHeight: height / 8
     },
 
     logo: {

@@ -11,7 +11,7 @@ const LoginPage = (props: any) => {
 
     return(
         <View style={[LoginPageStyle.default, LoginPageStyle.loginScreen]}>
-            <Logo size={200}/>
+            <Logo size={100}/>
             <Login nav={ goHome } />
         </View>
 

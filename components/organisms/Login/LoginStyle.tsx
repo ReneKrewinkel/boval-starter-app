@@ -1,6 +1,6 @@
 import tokens from '../../../resources/style/tokens'
 
-const LoginStyle = {
+const LoginStyle: any = {
 
     inputGroup: {
         padding: tokens.padding.s,

@@ -1,6 +1,6 @@
 import tokens from '../../../resources/style/tokens'
 
-const LabelStyle = {
+const LabelStyle: any = {
 
     default: {
         fontSize: tokens.fontSize.default,

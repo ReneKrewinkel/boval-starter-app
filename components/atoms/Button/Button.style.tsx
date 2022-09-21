@@ -1,6 +1,6 @@
 import tokens from '../../../resources/style/tokens'
 
-const ButtonStyle = {
+const ButtonStyle: any = {
 
     default: {
         borderRadius: 8,

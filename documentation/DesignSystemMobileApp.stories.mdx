@@ -8,10 +8,17 @@ import Plugin from './assets/plugin.svg';
 import Repo from './assets/repo.svg';
 import StackAlt from './assets/stackalt.svg';
 
-<Meta title="BOVAL/Introduction" />
+import AtomicAtom from './assets/atomic-atom.svg'
+import AtomicMolecule from './assets/atomic-molecule.svg'
+import AtomicOrganism from './assets/atomic-organism.svg'
+import AtomicTemplate from './assets/atomic-template.svg'
+import AtomicPage from './assets/atomic-page.svg'
+
+<Meta title="BOVAL/Design System Mobile" />
 
 <style>
   {`
+
     .subheading {
       --mediumdark: '#999999';
       font-weight: 900;
@@ -120,27 +127,69 @@ Dit design system bevat alle componenten (atoms en molecules) die
 ingezet kunnen worden in de mobile app(s).
 
 ## Resources
+
+> **LET OP!** Er gaat iets mis zodra een icon library geinstalleerd wordt.
+Om de een of ander reden breekt storybook dan. Ik heb het nog niet op kunnen lossen.
+
+### Expo Vector icons
+Dit package omvat zo'n beetje alle bekende icon libraries.
+
+```shell
+yarn add @expo/vector-icons
+## Of
+npm install @expo/vector-icons
+```
+
 <div className="tip-wrapper">
-    <span className="tip">Tip</span>Overzicht Icons:&nbsp;
+    <span className="tip">Expo Icons</span>Overzicht Icons en hoe in React Native te gebruiken:&nbsp;
     <a href="https://icons.expo.fyi">https://icons.expo.fyi</a>
 </div>
 
+### Alleen Fontawsome
+```shell
+yarn add @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
+yarn add @fortawesome/free-solid-svg-icons
+yarn add @fortawesome/free-brands-svg-icons
+yarn add @fortawesome/free-regular-svg-icons
 
-<div className="subheading">Configure</div>
+## Of
+npm i --save @fortawesome/react-native-fontawesome @fortawesome/fontawesome-svg-core react-native-svg
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+```
 
-Hieronder staan een aantal voorbeelden hoe je deze introductiepagina
-een beetje fraai kunt stylen.
+<div className="tip-wrapper">
+    <span className="tip">FontAwesome</span>Installatie handleiding en hoe te gebruiken&nbsp;
+    <a href="https://fontawesome.com/docs/web/use-with/react-native">https://fontawesome.com/docs/web/use-with/react-native</a>
+</div>
+
+
+<div className="subheading">Atomic Design</div>
+
+_Atomic design is not a linear process, but rather a mental
+model to help us think of our user interfaces as both a cohesive
+whole and a collection of parts at the same time.
+Each of the five stages plays a key role in the hierarchy
+of our interface design systems._
+
+<div className="tip-wrapper">
+    <span className="tip">Atomic Design</span>Meer informatie over Atomic Design&nbsp;
+    <a href="https://atomicdesign.bradfrost.com">https://atomicdesign.bradfrost.com</a>
+</div>
 
 <div className="link-list">
   <a
     className="link-item"
-    href="https://storybook.js.org/docs/react/addons/addon-types"
+    href="./atoms"
     target="_blank"
   >
-    <img src={Plugin} alt="plugin" />
+      <img src={AtomicAtom} alt="atoms" />
     <span>
-      <strong>Presets for popular tools</strong>
-      Easy setup for TypeScript, SCSS and more.
+      <strong>Atoms</strong>
+        Atoms are the basic building blocks of matter.
+        Applied to interfaces, atoms are our main JSX tags,
+        such as a form label, an input or a button.
     </span>
   </a>
   <a
@@ -148,10 +197,11 @@ een beetje fraai kunt stylen.
     href="https://storybook.js.org/docs/react/configure/webpack"
     target="_blank"
   >
-    <img src={StackAlt} alt="Build" />
+    <img src={AtomicMolecule} alt="molecule" />
     <span>
-      <strong>Build configuration</strong>
-      How to customize webpack and Babel
+      <strong>Molecules</strong>
+      Molecules can consist of several atoms, but not in a defined manner.
+      Molecules are consistent groupings of atoms.
     </span>
   </a>
   <a
@@ -159,10 +209,13 @@ een beetje fraai kunt stylen.
     href="https://storybook.js.org/docs/react/configure/styling-and-css"
     target="_blank"
   >
-    <img src={Colors} alt="colors" />
+    <img src={AtomicOrganism} alt="organisms" />
     <span>
-      <strong>Styling</strong>
-      How to load and configure CSS libraries
+      <strong>Organisms</strong>
+      Molecules give us some building blocks to work with, and we can now
+        combine them together to form organisms. Organisms are groups of
+        molecules joined together to form a relatively complex,
+        distinct section of an interface.
     </span>
   </a>
   <a
@@ -170,48 +223,14 @@ een beetje fraai kunt stylen.
     href="https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack"
     target="_blank"
   >
-    <img src={Flow} alt="flow" />
+    <img src={AtomicPage} alt="pages" />
     <span>
-      <strong>Data</strong>
-      Providers and mocking for data libraries
+      <strong>Pages</strong>
+        Pages are specific instances of templates (not available in this setup).
+        Here, placeholder content is replaced with real representative content
+        to give an accurate depiction of what a user will ultimately see.
     </span>
   </a>
 </div>
 
-<div className="subheading">Learn</div>
 
-<div className="link-list">
-  <a className="link-item" href="https://storybook.js.org/docs" target="_blank">
-    <img src={Repo} alt="repo" />
-    <span>
-      <strong>Storybook documentation</strong>
-      Configure, customize, and extend
-    </span>
-  </a>
-  <a className="link-item" href="https://storybook.js.org/tutorials/" target="_blank">
-    <img src={Direction} alt="direction" />
-    <span>
-      <strong>In-depth guides</strong>
-      Best practices from leading teams
-    </span>
-  </a>
-  <a className="link-item" href="https://github.com/storybookjs/storybook" target="_blank">
-    <img src={Code} alt="code" />
-    <span>
-      <strong>GitHub project</strong>
-      View the source and add issues
-    </span>
-  </a>
-  <a className="link-item" href="https://discord.gg/storybook" target="_blank">
-    <img src={Comments} alt="comments" />
-    <span>
-      <strong>Discord chat</strong>
-      Chat with maintainers and the community
-    </span>
-  </a>
-</div>
-
-<div className="tip-wrapper">
-  <span className="tip">Tip</span>Edit the Markdown in{' '}
-  <code>stories/Introduction.stories.mdx</code>
-</div>

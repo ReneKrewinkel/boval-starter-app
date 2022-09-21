@@ -1,0 +1,45 @@
+
+import { Meta, Typeset } from '@storybook/addon-docs';
+
+<Meta title="BOVAL/Quarks/Typography" />
+
+export const fontName = "Jullie Font"
+
+export const typography = {
+    type: {
+        primary: `{ fontName }`,
+    },
+    weight: [
+        { type: "regular", weight: '400' },
+        { type: "bold", weight: '700'},
+        { type: "extrabold", weight: '800'},
+        { type: "black", weight: '900'}
+    ],
+    size: [8, 10, 12, 14, 16, 18, 20, 22]
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+<h1>{`${fontName}`}</h1>
+<h4>Font: { `${fontName}` }</h4>
+<ul>
+    {
+        typography.weight.map( (item,index) => {
+            return(
+                <li key={`weight-${index}`}>
+                    { `${item.type}:${ item.weight }`}
+                </li>
+            )
+        })
+    }
+
+</ul>
+
+<Typeset
+    fontSizes={typography.size}
+    fontWeight={typography.weight.black}
+    sampleText={SampleText}
+    fontFamily={typography.type.primary}
+/>
+
+

@@ -1,11 +1,13 @@
-import config from "../config/config";
+import config from "../../config";
+
+import { UserLoginInterface } from "./API.interface"
 
 export const fetchUserKey = () => new Promise( (resolve,reject) => {
     reject(false)
     //resolve(true)
 })
 
-export const userLogin = (username, password) => new Promise( (resolve,reject) => {
+export const userLogin = ({username, password}: UserLoginInterface) => new Promise( (resolve,reject) => {
 
     fetch(config.loginUrl)
         .then( result => result.json())

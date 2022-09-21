@@ -13,14 +13,12 @@ const ButtonMeta: ComponentMeta<typeof Button> = {
 const Template: Story<ButtonInterface> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
-// @ts-ignore
 Primary.args = {
     text: "Oke",
     style: ButtonStyle.primary
 }
 
 export const Secondary = Template.bind({})
-// @ts-ignore
 Secondary.args = {
     text: "Annuleren",
     style: ButtonStyle.secondary

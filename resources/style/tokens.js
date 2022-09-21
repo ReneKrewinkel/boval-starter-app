@@ -8,14 +8,32 @@ const colors = {
     colorBrandLight: "#e8effc",
     colorBrandDark: "#1e4799",
     colorMuted: "#D6D6D6",
+    colorRed: "#F00",
+    colorRedTransparent: "rgba(255,0,0,0.2)"
 }
 
 const tokens = {
 
-    screen: {
+    base: {
         width: width,
         height: height,
-        oneQuaterHeight: (height / 4),
+        oneQuaterHeight: height / 4,
+        oneFifthHeight: height / 5,
+        oneSixthHeight: height / 6,
+        oneSeventhHeight: height / 7,
+    },
+
+    logo: {
+        small: { size: 100 },
+        default: { size: 200 },
+        large: { size: 400 }
+    },
+
+    borderRadius: {
+        s: 10
+    },
+
+    screen: {
         flex: 1,
         backgroundColor: colors.colorBrandLight
     },
@@ -30,7 +48,7 @@ const tokens = {
           m: 14,
           l: 16,
          xl: 18,
-        xxl: 20
+        xxl: 24
     },
 
     fontWeight: {
@@ -52,7 +70,7 @@ const tokens = {
         xxs: 1,
         xs: 2,
         s: 4,
-        m: 6,
+        m: 10,
         l: 20,
         xl: 30,
         xxl: 40

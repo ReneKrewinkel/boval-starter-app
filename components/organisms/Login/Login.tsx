@@ -15,13 +15,15 @@ import Button from "../../atoms/Button"
 import ButtonStyle from "../../atoms/Button/Button.style"
 
 import { userLogin } from "../../../lib/API"
-import LoginStyle from "./LoginStyle";
+import LoginStyle from "./LoginStyle"
+
+import Error from "../../atoms/Error"
 
 const Login = ({ nav }:any) => {
 
     const [loginName, setLoginName] = useState("")
     const [password, setPassword] = useState("")
-    const [isError, setError] = useState(false)
+    const [isError, setError] = useState(true)
 
     const setLoginNameHandler = (eLoginname:string): void => {
         setLoginName(eLoginname)
@@ -63,7 +65,7 @@ const Login = ({ nav }:any) => {
                     style={ButtonStyle.primary}
                     action={loginAction}/>
 
-            { isError && <View><Text>Error</Text></View>}
+            { isError && <Error code={"0001"} msg={"Error"} /> }
         </Card>
     )
 

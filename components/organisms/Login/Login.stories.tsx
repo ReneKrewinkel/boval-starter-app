@@ -4,16 +4,16 @@ import LoginScreen from "./Login"
 import { LoginInterface } from "./Login.interface"
 
 const LoginMeta: ComponentMeta<typeof LoginScreen> = {
-    title: "BOVAL/Organisms/Login",
+    title: "BOVAL/Organisms/Blocks",
     component: LoginScreen,
 }
 
 
 const Template: Story<LoginInterface> = (args: any) => <LoginScreen {...args} />
 
-export const Login = Template.bind({})
+export const LoginBlock = Template.bind({})
 // @ts-ignore
-Login.args  = {
+LoginBlock.args  = {
     nav: null
 }
 

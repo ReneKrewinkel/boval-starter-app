@@ -6,8 +6,9 @@ const LoginPageStyle = {
         ...tokens.screen,
         justifyContent:'flex-start'
     },
+
     loginScreen: {
-        paddingTop: tokens.screen.oneQuaterHeight
+        paddingTop: tokens.base.oneSeventhHeight
     }
 
 }

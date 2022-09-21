@@ -17,4 +17,16 @@ LoginBlock.args  = {
     nav: null
 }
 
+LoginBlock.parameters = {
+    docs: {
+        source: {
+            code: 'const whatever = () => {' +
+                '}',
+            language: "javascript",
+            type: "auto"
+        }
+    }
+}
+
+
 export default LoginMeta

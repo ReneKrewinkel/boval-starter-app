@@ -3,22 +3,25 @@ import { Meta, Typeset } from '@storybook/addon-docs';
 
 <Meta title="BOVAL/Quarks/Typography" />
 
-export const fontName = "Jullie Font"
+export const fontName = "DTL Prokyon"
 
 export const typography = {
     type: {
-        primary: `{ fontName }`,
+        regular: `main-text-regular`,
+        medium: `main-text-medium`,
+        bold: `main-text-bold`
     },
     weight: [
         { type: "regular", weight: '400' },
-        { type: "bold", weight: '700'},
-        { type: "extrabold", weight: '800'},
-        { type: "black", weight: '900'}
+        { type: "medium", weight: '700'},
+        { type: "bold", weight: '800'},
     ],
     size: [8, 10, 12, 14, 16, 18, 20, 22]
 };
 
 export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+> DEMO FONT GEBRUIKT!
 
 <h1>{`${fontName}`}</h1>
 <h4>Font: { `${fontName}` }</h4>
@@ -27,7 +30,7 @@ export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing el
         typography.weight.map( (item,index) => {
             return(
                 <li key={`weight-${index}`}>
-                    { `${item.type}:${ item.weight }`}
+                    { `${item.type}`}
                 </li>
             )
         })
@@ -35,11 +38,28 @@ export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing el
 
 </ul>
 
+<h5>Regular</h5>
 <Typeset
     fontSizes={typography.size}
-    fontWeight={typography.weight.black}
+    fontWeight={typography.weight.regular}
     sampleText={SampleText}
-    fontFamily={typography.type.primary}
+    fontFamily={typography.type.regular}
 />
 
+<h5>Medium</h5>
+<Typeset
+    fontSizes={typography.size}
+    fontWeight={typography.weight.medium}
+    sampleText={SampleText}
+    fontFamily={typography.type.medium}
+/>
+
+
+<h5>Bold</h5>
+<Typeset
+    fontSizes={typography.size}
+    fontWeight={typography.weight.bold}
+    sampleText={SampleText}
+    fontFamily={typography.type.bold}
+/>
 

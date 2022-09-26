@@ -2,7 +2,7 @@ import React from "react"
 import { Story, ComponentMeta } from "@storybook/react"
 import Label from "./Label"
 import { LabelInterface } from "./Label.interface"
-import LabelStyle from "./Label.style"
+import {LabelStyle} from "./Label.style"
 
 const LabelMeta: ComponentMeta<typeof Label> = {
     title: "BOVAL/Atoms/Label",

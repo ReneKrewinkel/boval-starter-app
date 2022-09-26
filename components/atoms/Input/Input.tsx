@@ -1,7 +1,7 @@
 import { TextInput } from "react-native"
 import { useState } from "react"
 import { InputInterface } from "./Input.interface"
-import InputStyle from "./Input.style"
+import {InputStyle} from "./Input.style"
 
 const Input = ({ value, required = false, type, style, regex = undefined, action }: InputInterface) => {
 

@@ -5,19 +5,17 @@ import { View, Text } from "react-native"
 import Card from "../../molecules/Card"
 
 /// Content
-import Label from "../../atoms/Label"
-import LabelStyle from "../../atoms/Label/Label.style"
+import Label, { LabelStyle } from "../../atoms/Label"
 
-import Input from "../../atoms/Input"
-import InputStyle from "../../atoms/Input/Input.style"
+import Input, { InputStyle } from "../../atoms/Input"
 
-import Button from "../../atoms/Button"
-import ButtonStyle from "../../atoms/Button/Button.style"
+
+import Button, { ButtonStyle } from "../../atoms/Button"
 
 import { userLogin } from "../../../lib/API"
 import LoginStyle from "./LoginStyle"
 
-import Notification from "../../atoms/Notification"
+import Notification from "../../molecules/Notification"
 
 const Login = ({ nav }:any) => {
 
@@ -33,6 +31,7 @@ const Login = ({ nav }:any) => {
     }
 
     const loginAction = (): void => {
+
         userLogin(loginName, password)
             .then(result => {
                 nav(result)

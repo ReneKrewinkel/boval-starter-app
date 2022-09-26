@@ -34,4 +34,4 @@ const ActionButtonStyle: any = {
 
 }
 
-export default ActionButtonStyle
+export { ActionButtonStyle }

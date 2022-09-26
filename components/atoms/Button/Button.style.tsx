@@ -39,4 +39,4 @@ const ButtonStyle: any = {
 
 }
 
-export default ButtonStyle
+export { ButtonStyle }

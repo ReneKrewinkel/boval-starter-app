@@ -7,18 +7,10 @@ import CardStyle from "./Card.style"
 
 /// Content
 
-import Label from "../../atoms/Label"
-import LabelStyle from "../../atoms/Label/Label.style"
-
+import Label, { LabelStyle } from "../../atoms/Label"
 import { Text } from "../../atoms/Input/Input.stories"
-import Input from "../../atoms/Input"
-import InputStyle from "../../atoms/Input/Input.style"
-
-import Button from "../../atoms/Button"
-import ButtonStyle from "../../atoms/Button/Button.style"
-import {
-    InputInterface
-} from "../../atoms/Input/Input.interface";
+import Input, { InputStyle } from "../../atoms/Input"
+import Button, { ButtonStyle } from "../../atoms/Button"
 
 const CardMeta: ComponentMeta<typeof Card> = {
     title: "BOVAL/Molecules/Card",

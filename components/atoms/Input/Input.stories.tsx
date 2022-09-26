@@ -2,7 +2,7 @@ import React from "react"
 import { Story, ComponentMeta } from "@storybook/react"
 import Input from "./Input"
 import { InputInterface  } from "./Input.interface"
-import InputStyle from "./Input.style"
+import {InputStyle} from "./Input.style"
 
 const InputMeta: ComponentMeta<typeof Input> = {
     title: "BOVAL/Atoms/Input",

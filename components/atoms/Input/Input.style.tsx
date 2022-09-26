@@ -10,4 +10,4 @@ const InputStyle: any = {
     }
 }
 
-export default InputStyle
+export { InputStyle }

@@ -1,10 +1,11 @@
 import { Text, View } from "react-native"
 import { NotificationInterface } from "./Notification.interface"
 import NotificationStyle from "./Notification.style"
+import Label, { LabelStyle }  from "../../atoms/Label"
+
 //import { MaterialIcons } from '@expo/vector-icons'
 
 
-/// Niet echt een atom, maar bestaat niet echt uit onderdelen.
 /// Formeel icon, en text/text ook als "atom" opnemen.
 const Notification = ({ type, code, msg}: NotificationInterface ) => {
 
@@ -16,8 +17,8 @@ const Notification = ({ type, code, msg}: NotificationInterface ) => {
             {/*<MaterialIcons name="error-outline"*/}
             {/*               size={ NotificationStyle.default.icon.size }*/}
             {/*               style={NotificationStyle.default.icon } />*/}
-            <Text style={NotificationStyle.default.bold}>{ code }</Text>
-            <Text style={NotificationStyle.default.text}>{ msg }</Text>
+            <Label style={LabelStyle.bold} text={code} />
+            <Label style={LabelStyle.default} text={msg} />
         </View>
     )
 

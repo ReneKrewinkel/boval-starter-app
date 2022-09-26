@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react-native'
 
-import { Default, Bold} from "./Label.stories";
-import LabelStyle from "./Label.style"
+import { Default } from "./Label.stories";
+import { LabelStyle } from "./Label.style"
 
 
 describe("Label", () => {
@@ -14,7 +14,7 @@ describe("Label", () => {
     })
 
     it("Can render a bold label", () => {
-        let { getByText } = render(<Default text="default" style={ LabelStyle.default } />)
+        let { getByText } = render(<Default text="default" style={ LabelStyle.bold } />)
         let labelCreated = getByText("default");
         expect(labelCreated).not.toBeNull();
     })

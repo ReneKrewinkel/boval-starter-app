@@ -5,7 +5,7 @@ import { NotificationInterface  } from "./Notification.interface"
 import NotificationStyle from "./Notification.style"
 
 const NotificationMeta: ComponentMeta<typeof Notification> = {
-    title: "BOVAL/Atoms/Notification",
+    title: "BOVAL/Molecules/Notification",
     component: Notification,
 }
 

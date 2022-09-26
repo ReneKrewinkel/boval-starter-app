@@ -7,13 +7,13 @@ export const fetchUserKey = () => new Promise( (resolve,reject) => {
     //resolve(true)
 })
 
-export const userLogin = ({username, password}: UserLoginInterface) => new Promise( (resolve,reject) => {
+export const userLogin = (loginName: string, password: string) => new Promise( (resolve, reject) => {
 
     fetch(config.loginUrl)
         .then( result => result.json())
         .then( result => {
             resolve({
-                user: username,
+                user: loginName,
                 login: true,
                 token: "from-the-server",
                 data: result

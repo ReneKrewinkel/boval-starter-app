@@ -1,12 +1,12 @@
 import {TouchableOpacity, View, Text} from "react-native"
 import {ButtonInterface} from "./Button.interface"
-import ButtonStyle from "./Button.style"
+import {ButtonStyle} from "./Button.style"
 
 
 const Button = ({text, style, action}: ButtonInterface) => {
 
     const buttonPressed = () => {
-        action()
+        action && action()
     }
 
     return(

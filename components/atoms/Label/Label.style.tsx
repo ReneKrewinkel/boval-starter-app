@@ -21,9 +21,6 @@ const LabelStyle: any = {
         justifyContent: "center",
         alignItems: "center",
     }
-
-
-
 }
 
-export default LabelStyle
+export { LabelStyle }

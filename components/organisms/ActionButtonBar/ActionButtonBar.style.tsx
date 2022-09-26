@@ -10,4 +10,4 @@ const ActionButtonBarStyle: any = {
 
 }
 
-export default ActionButtonBarStyle
+export { ActionButtonBarStyle }

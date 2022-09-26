@@ -2,7 +2,7 @@ import React from "react"
 import { Story, ComponentMeta } from "@storybook/react"
 import ActionButton from "./ActionButton"
 import { ActionButtonInterface  } from "./ActionButton.interface"
-import ActionButtonStyle from "./ActionButton.style"
+import { ActionButtonStyle } from "./ActionButton.style"
 
 const ActionButtonMeta: ComponentMeta<typeof ActionButton> = {
     title: "BOVAL/Atoms/ActionButton",

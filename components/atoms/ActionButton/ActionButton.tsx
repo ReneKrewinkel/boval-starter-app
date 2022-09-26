@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 
 import { ActionButtonInterface } from './ActionButton.interface'
-import ActionButtonStyle from './ActionButton.style' 
+import {ActionButtonStyle} from './ActionButton.style'
 
 const ActionButton = ({ style, label, action }:ActionButtonInterface) => {
 

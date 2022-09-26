@@ -28,8 +28,9 @@ const ActionButtonStyle: any = {
     },
 
     text: {
-        fontSize: tokens.fontSize.default,
-        margin: tokens.margin.s
+        fontSize: tokens.fontSize.s,
+        margin: tokens.margin.s,
+        fontFamily: "main-text-regular",
     }
 
 }

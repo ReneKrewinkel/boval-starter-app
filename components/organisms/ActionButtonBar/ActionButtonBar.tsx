@@ -2,10 +2,8 @@ import { useState, useEffect } from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 
 import { ActionButtonBarInterface } from './ActionButtonBar.interface'
-import ActionButtonBarStyle from './ActionButtonBar.style'
-import ActionButton from "../../atoms/ActionButton";
-import ActionButtonStyle
-    from "../../atoms/ActionButton/ActionButton.style";
+import { ActionButtonBarStyle } from './ActionButtonBar.style'
+import ActionButton, {ActionButtonStyle} from "../../atoms/ActionButton";
 
 const ActionButtonBar = (props:ActionButtonBarInterface) => {
   

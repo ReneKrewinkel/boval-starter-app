@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { fetchUserKey} from "./lib/API"
 import Homepage from './components/pages/Homepage'
 import LoginPage from "./components/pages/LoginPage"
+import useCustomFonts from "./hooks/useCustomFonts";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ const App = () => {
 
     const [isLoaded, setLoaded] = useState(false)
     const [initialRoute, setInitialRoute] = useState("")
+    const fontsLoaded = useCustomFonts()
     const options = {
         headerShown: false
     }

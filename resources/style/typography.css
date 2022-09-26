@@ -1,14 +1,14 @@
 @font-face {
     font-family: "main-text-regular";
-    src: url("../fonts/dtlprokyon-regular.woff2") format("woff2"), url("../fonts/dtlprokyon-regular.woff") format("woff");
+    src: url("../fonts/poppins_regular.woff2") format("woff2"), url("../fonts/poppins_regular.woff") format("woff");
 }
 
 @font-face {
     font-family: "main-text-medium";
-    src: url("../fonts/dtlprokyon-medium.woff2") format("woff2"), url("../fonts/dtlprokyon-medium.woff") format("woff");
+    src: url("../fonts/poppins_medium.woff2") format("woff2"), url("../fonts/poppins_medium.woff") format("woff");
 }
 /*! main-text bold */
 @font-face {
     font-family: "main-text-bold";
-    src: url("../fonts/dtlprokyon-bold.woff2") format("woff2"), url("../fonts/dtlprokyon-bold.woff") format("woff");
+    src: url("../fonts/poppins_bold.woff2") format("woff2"), url("../fonts/poppins_bold.woff") format("woff");
 }

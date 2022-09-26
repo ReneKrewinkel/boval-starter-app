@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 
 import { ListInterface } from './List.interface'
-import ListStyle from './List.style' 
+import { ListStyle } from './List.style'
 
 const List = (props:ListInterface) => {
   

@@ -6,7 +6,9 @@ const InputStyle: any = {
         borderBottomWidth: 1,
         borderBottomColor: tokens.colors.colorMuted,
         padding: tokens.padding.s,
-        width: "100%"
+        width: "100%",
+        fontFamily: "main-text-medium",
+        fontSize: tokens.fontSize.m
     }
 }
 

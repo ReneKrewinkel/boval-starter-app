@@ -6,7 +6,10 @@ import {IconStyle} from "./Icon.style"
 
 const IconMeta: ComponentMeta<typeof Icon> = {
     title: "BOVAL/Atoms/Icon",
-    component: Icon,    
+    component: Icon,
+    argTypes: {
+        testID: { table: { disable: true } }
+    }
 }
 
 const testID = "Icon-" + Math.floor(Math.random() * 90000) + 10000

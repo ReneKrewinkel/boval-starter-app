@@ -6,10 +6,13 @@ import { ListStyle } from './List.style'
 
 const ListMeta: ComponentMeta<typeof List> = {
     title: "BOVAL/Atoms/List",
-    component: List,    
+    component: List,
+    argTypes: {
+        testID: { table: { disable: true } }
+    }
 }
 
-const testID = "{List}-" + Math.floor(Math.random() * 90000) + 10000
+const testID = "List-" + Math.floor(Math.random() * 90000) + 10000
 
 const Template: Story<ListInterface> = (args) => <List {...args} />
 

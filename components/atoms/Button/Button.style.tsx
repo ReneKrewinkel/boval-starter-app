@@ -22,6 +22,7 @@ const ButtonStyle: any = {
             color: tokens.colors.colorWhite,
             textAlign: "center",
             fontWeight: tokens.fontWeight.bold,
+            fontFamily: "main-text-bold",
         }
     },
 
@@ -34,6 +35,7 @@ const ButtonStyle: any = {
             color: tokens.colors.colorBrandDark,
             textAlign: "center",
             fontWeight: tokens.fontWeight.bold,
+            fontFamily: "main-text-bold",
         }
     }
 

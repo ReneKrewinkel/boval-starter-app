@@ -16,6 +16,12 @@ const colors = {
     colorYellowTransparent: "rgba(248, 207, 101, 0.2)"
 }
 
+const fonts = {
+    "main-text-regular": require('../fonts/poppins_regular.ttf'),
+    "main-text-medium": require('../fonts/poppins_medium.ttf'),
+    "main-text-bold": require('../fonts/poppins_bold.ttf')
+}
+
 const tokens = {
 
     base: {
@@ -29,9 +35,7 @@ const tokens = {
     },
 
     logo: {
-        small: { size: 100 },
-        default: { size: 200 },
-        large: { size: 400 }
+        default: { size: "200" },
     },
 
     borderRadius: {
@@ -47,15 +51,16 @@ const tokens = {
     },
 
     colors: colors,
+    fontFamily: fonts,
 
     fontSize: {
         xxs: 6,
          xs: 8,
           s: 10,
-    default: 12,
-          m: 14,
-          l: 16,
-         xl: 18,
+    default: 14,
+          m: 16,
+          l: 18,
+         xl: 20,
         xxl: 24
     },
 

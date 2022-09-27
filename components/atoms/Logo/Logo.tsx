@@ -9,10 +9,8 @@ const Logo = ({ size }: LogoInterface ) => {
 
     return(
         <View style={[LogoStyle.default]}>
-            <Image style={[
-                              LogoStyle.logoDefault,
-                              { width: s, height: s }
-                          ]} source={logo}/>
+            <Image style={[ LogoStyle.logoDefault, { width: s, height: s }]}
+                   source={logo}/>
         </View>
     )
 }

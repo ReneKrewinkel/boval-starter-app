@@ -1,7 +1,7 @@
-import { View } from 'react-native'
+import {View} from 'react-native'
 import Login from "../../organisms/Login"
 import LoginPageStyle from "./LoginPage.style"
-import Logo from "../../atoms/Logo"
+import Logo, {LogoSize} from "../../atoms/Logo"
 
 const LoginPage = (props: any) => {
 
@@ -11,7 +11,7 @@ const LoginPage = (props: any) => {
 
     return(
         <View style={[LoginPageStyle.default, LoginPageStyle.loginScreen]}>
-            <Logo size={100}/>
+            <Logo size={LogoSize.regular}/>
             <Login nav={ goHome } />
         </View>
 
